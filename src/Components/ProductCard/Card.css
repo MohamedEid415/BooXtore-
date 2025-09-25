@@ -1,0 +1,132 @@
+#cardLayoutForOneProduct {
+    width: 250px;
+    height: fit-content;
+    border: 1px solid rgba(128, 128, 128, 0.351);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 1px 7px gray;
+    padding: 10px;
+    padding-top: 20px;
+    gap: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ddf1eb;
+    position: relative;
+}
+
+#cardLayoutForOneProduct:hover {
+    cursor: pointer;
+}
+
+#cardLayoutForOneProduct:hover img[alt="Product-Img"] {
+    animation-name: toggleImg;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes toggleImg {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cardLayoutForOneProduct h4 {
+    color: #233341;
+    font-size: 22px;
+    font-weight: 500;
+    Display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#cardLayoutForOneProduct img {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+#cardLayoutForOneProduct img[alt="LeftSeparator"] {
+    transform: rotateY(180deg);
+}
+
+#cardLayoutForOneProduct p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #233341;
+    Display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+#horizHolder {
+    width: 100%;
+    height: 40px;
+    Display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+#priceLayout {
+    width: 135px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #F2E978;
+    Display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#discount {
+    position: absolute;
+    width: fit-content;
+    height: 70px;
+    /* border: 1px solid forestgreen; */
+    top: 0%;
+    right: 5%;
+    /* border-radius: 5px; */
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #F47064;
+    Display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    box-shadow: 0px 1px 10px grey;
+}
+
+#discount span {
+    font-size: 14px;
+    color: #233341;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#discount span[title="num"] {
+    font-family: cursive;
+    font-size: 12px;
+    font-weight: normal;
+}

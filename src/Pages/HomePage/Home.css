@@ -1,0 +1,144 @@
+#homePageLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #F3FAF7;
+}
+
+#rightStyle,
+#leftStyle {
+    height: 60%;
+    width: 10%;
+    /* border: 1px solid red; */
+    background-color: #B2DDD0;
+    display: none;
+}
+
+#rightStyle {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.738);
+}
+
+#leftStyle {
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    box-shadow: -5px 5px 10px rgba(128, 128, 128, 0.738);
+}
+
+
+#firstMainSection {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#textSection {
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+#textSection h1 {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#textSection p {
+    color: black;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+#hashes {
+    color: #6FB3A2;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#imgSection {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#imgSection img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:375px) {
+    #imgSection img {
+        width: 75%;
+    }
+}
+
+@media (min-width:510px) {
+    #imgSection img {
+        width: 50%;
+    }
+}
+
+@media (min-width:768px) {
+    #imgSection img {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    #imgSection img {
+        height: 80%;
+        width: 50%;
+    }
+
+    #firstMainSection {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    #rightStyle,
+    #leftStyle {
+        display: block;
+    }
+
+    #textSection {
+        justify-content: center;
+        text-align: start;
+        padding-left: 60px;
+    }
+
+    #textSection h1 {
+        justify-content: flex-start;
+    }
+
+    #hashes {
+        align-self: flex-start;
+    }
+}

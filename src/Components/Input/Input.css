@@ -1,0 +1,39 @@
+#inputStyle {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-bottom: 2px solid gray;
+}
+
+#inputStyle span {
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: bold;
+    /* color: rgba(0, 0, 0, 0.628); */
+    color: #408C7B;
+    text-wrap: 0;
+}
+
+#inputStyle input {
+    height: 85%;
+    border: 1px solid gainsboro;
+    background-color: #f6f8f7;
+    padding-left: 10px;
+}
+
+#inputStyle input:focus {
+    border: none;
+}
+
+@media (min-width:425px) {
+    #inputStyle input {
+        width: 60%;
+    }
+}
+@media (min-width: 1024px) {
+
+}

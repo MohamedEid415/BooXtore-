@@ -1,0 +1,90 @@
+#headerLayout {
+    width: 100%;
+    height: 8vh;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3FAF7;
+}
+
+.brd {
+    border: 1px solid blueviolet;
+}
+
+#headerItSelf {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#imgInHeader {
+    height: 100%;
+    width: 60px;
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+#imgInHeader:hover {
+    transform: scale(1.6);
+
+}
+
+#iconHolder {
+    width: 250px;
+    height: 80%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0px;
+    /* border: 1px solid red; */
+}
+
+.nameAndIcon {
+    width: 90px;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nameAndIcon span {
+    color: white;
+    text-decoration: none;
+}
+
+.nameAndIcon:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+    box-shadow: 0px 3px 5px gray;
+}
+
+.navlinkStyle {
+    width: 90px;
+    height: 100%;
+    text-decoration: none;
+}
+
+@media (min-width:325px) {
+    .nameAndIcon {
+        width: 120px;
+    }
+
+    #iconHolder {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .navlinkStyle {
+        width: 110px;
+    }
+}

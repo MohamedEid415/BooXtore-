@@ -8,7 +8,13 @@ import Home from "./Pages/HomePage/Home";
 import Products, { PostsLoader } from "./Pages/ProductsPage/Products";
 import About from "./Pages/AboutPage/About";
 import FirstLoadingPage from "./Pages/FirstLoadingPage/FirstLoadingPage";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    if (localStorage.getItem("currentUser") === "") {
+      localStorage.setItem("currentUser", "Guest");
+    }
+  });
   const RoutesSecondWay = createBrowserRouter([
     {
       path: "/",
